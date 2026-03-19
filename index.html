@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nemo Company - Scale Your Business</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&family=Oswald:wght@400;500;700&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'pop-yellow': '#FFDE00',
+              'pop-black': '#000000',
+              'pop-white': '#FFFFFF',
+            },
+            fontFamily: {
+              'headings': ['Oswald', 'sans-serif'],
+              'body': ['"Open Sans"', 'sans-serif'],
+            },
+            boxShadow: {
+              'pop': '5px 5px 0px 0px #000000',
+              'pop-hover': '2px 2px 0px 0px #000000',
+              'pop-lg': '8px 8px 0px 0px #000000',
+            },
+            borderWidth: {
+              '3': '3px',
+              '4': '4px',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        font-family: 'Open Sans', sans-serif;
+      }
+      h1, h2, h3, h4, h5, h6, .font-headings {
+        font-family: 'Oswald', sans-serif;
+      }
+      .bg-dots {
+        background-image: radial-gradient(#000 1px, transparent 1px);
+        background-size: 20px 20px;
+      }
+      .bg-dots-sm {
+        background-image: radial-gradient(#000 20%, transparent 20%);
+        background-size: 10px 10px;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.2.0?external=react",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "@google/genai": "https://esm.sh/@google/genai@^1.39.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
